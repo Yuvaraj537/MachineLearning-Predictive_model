@@ -55,6 +55,73 @@ Machine Learning is broadly divided into:
 
 ---
 
+### 🔹 📂 Classification Models  
+
+**Definition:**  
+Classification is the task of predicting a **category or class label** from input data.  
+- Output → **Discrete values** (e.g., "Yes/No", "Spam/Not Spam").  
+- ✅ Examples: Spam detection, disease classification.  
+
+---
+
+### 📊 Popular Classification Algorithms & Explanation  
+
+#### 1. **Logistic Regression**  
+- Despite its name, it is used for **classification** (not regression).  
+- Uses the **sigmoid function** to output probabilities between 0 and 1.  
+- ✅ Example: Predicting whether an email is spam (1) or not spam (0).  
+
+#### 2. **Decision Trees**  
+- A tree-like structure where each node splits data based on feature values.  
+- Final predictions are made at **leaf nodes**.  
+- ✅ Example: Medical diagnosis (disease vs no disease).  
+
+#### 3. **Random Forest**  
+- An **ensemble of decision trees** where the final prediction is made by majority voting.  
+- Reduces overfitting and increases accuracy.  
+- ✅ Example: Fraud detection in banking.  
+
+#### 4. **Support Vector Machine (SVM)**  
+- Finds the **best hyperplane** that separates data points into classes.  
+- Can handle both **linear and non-linear** classification using kernels.  
+- ✅ Example: Face recognition, image classification.  
+
+#### 5. **K-Nearest Neighbors (KNN)**  
+- Classifies a new data point based on the **majority class of its k nearest neighbors**.  
+- Simple but computationally expensive on large datasets.  
+- ✅ Example: Recommender systems, customer segmentation.  
+
+#### 6. **Naïve Bayes**  
+- Based on **Bayes’ theorem** with the assumption of feature independence.  
+- Works well for **text classification** tasks.  
+- ✅ Example: Sentiment analysis, spam filtering.  
+
+#### 7. **Gradient Boosting (XGBoost, LightGBM, CatBoost)**  
+- Ensemble method that builds models sequentially, correcting previous errors.  
+- **XGBoost** → Extreme Gradient Boosting (fast & efficient).  
+- **LightGBM** → Faster training, good for large datasets.  
+- **CatBoost** → Handles categorical features well.  
+- ✅ Example: Customer churn prediction, loan default prediction.  
+
+---
+
+### 🔑 Summary of Classification Models  
+
+| Algorithm | Type | Best For | Key Feature |
+|-----------|------|----------|-------------|
+| Logistic Regression | Linear | Binary classification | Probability-based |
+| Decision Tree | Non-parametric | Small-medium datasets | Easy to interpret |
+| Random Forest | Ensemble | Large datasets | Reduces overfitting |
+| SVM | Margin-based | High-dimensional data | Works with kernels |
+| KNN | Distance-based | Small datasets | Simple but slow for large data |
+| Naïve Bayes | Probabilistic | Text classification | Fast & works well with sparse data |
+| Gradient Boosting (XGBoost/LightGBM) | Ensemble (Boosting) | Large & complex datasets | High accuracy, scalable |
+
+---
+
+✅ *These classification algorithms are the backbone of supervised machine learning and widely asked in interviews.*
+
+
 ## 🧩 3. Unsupervised Learning
 
 ### 🔹 🔗 Clustering  
@@ -74,6 +141,78 @@ Machine Learning is broadly divided into:
   - **Autoencoders** – neural network-based feature compression.  
 
 ---
+
+## 🔹 📈 Regression Models  
+
+**Definition:**  
+Regression is the task of predicting a **continuous numeric value** from input data.  
+- Output → **Real numbers** (e.g., price, temperature, age).  
+- ✅ Examples: Predicting house price, stock value.  
+
+---
+
+### 📊 Popular Regression Algorithms & Explanation  
+
+#### 1. **Linear Regression**  
+- Assumes a **linear relationship** between input features (X) and output (Y).  
+- Formula: `Y = aX + b`  
+- ✅ Example: Predicting salary based on years of experience.  
+
+#### 2. **Polynomial Regression**  
+- An extension of linear regression where the model fits a **curved (non-linear) line**.  
+- Formula: `Y = a0 + a1X + a2X^2 + a3X^3 ... + anX^n`  
+- ✅ Example: Predicting growth rate in non-linear trends.  
+
+#### 3. **Decision Tree Regressor**  
+- Splits the dataset into branches based on conditions.  
+- Predictions are made at the **leaf nodes**.  
+- ✅ Example: Predicting house prices based on features like area, location, and rooms.  
+
+#### 4. **Random Forest Regressor**  
+- An **ensemble of decision trees**.  
+- Takes the average prediction of multiple trees for better accuracy.  
+- ✅ Example: Predicting stock market prices.  
+
+#### 5. **Support Vector Regressor (SVR)**  
+- Uses **Support Vector Machines (SVM)** for regression tasks.  
+- Fits the best line within a margin of tolerance (epsilon).  
+- ✅ Example: Predicting real estate prices with fewer errors.  
+
+#### 6. **Ridge Regression (L2 Regularization)**  
+- Adds a **penalty term** to linear regression to reduce overfitting.  
+- Formula: `Loss = (Y - Y_pred)^2 + λΣ(w^2)`  
+- ✅ Example: Handling multicollinearity in financial datasets.  
+
+#### 7. **Lasso Regression (L1 Regularization)**  
+- Similar to Ridge but uses **absolute values** of weights.  
+- Can shrink some coefficients to zero (feature selection).  
+- Formula: `Loss = (Y - Y_pred)^2 + λΣ(|w|)`  
+- ✅ Example: Selecting important features in high-dimensional datasets.  
+
+#### 8. **Gradient Boosting Regressor (GBR)**  
+- Builds models sequentially, each correcting errors of the previous one.  
+- Uses decision trees + gradient descent optimization.  
+- ✅ Example: Predicting energy consumption, medical risk scores.  
+
+---
+
+### 🔑 Summary of Regression Models  
+
+| Algorithm | Type | Best For | Key Feature |
+|-----------|------|----------|-------------|
+| Linear Regression | Simple/Linear | Straight-line relationships | Fast & easy |
+| Polynomial Regression | Non-linear | Curved trends | Fits complex data |
+| Decision Tree Regressor | Non-parametric | Data with conditions | Easy to interpret |
+| Random Forest Regressor | Ensemble | Large datasets | Reduces overfitting |
+| Support Vector Regressor | Margin-based | Complex but small data | Robust to noise |
+| Ridge Regression | Regularized | Multicollinearity | Shrinks coefficients |
+| Lasso Regression | Regularized | Feature selection | Eliminates irrelevant features |
+| Gradient Boosting Regressor | Ensemble (Boosting) | High accuracy | Sequential learning |
+
+---
+
+✅ *These regression algorithms are widely used in Data Science, ML projects, and interviews.*
+
 
 ## 🤖 4. Deep Learning
 
