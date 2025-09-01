@@ -199,7 +199,65 @@ Regression is the task of predicting a **continuous numeric value** from input d
 - 📊 Types of Clustering:
   - **K-Means** – partitions data into *k* clusters.  
   - **Hierarchical Clustering** – builds a tree of clusters.  
-  - **DBSCAN** – density-based clustering that detects arbitrary shaped clusters.  
+  - **DBSCAN** – density-based clustering that detects arbitrary shaped clusters.
+    
+### 🔹 🔗 Clustering  
+
+**Definition:**  
+Clustering is the process of **grouping similar data points** into clusters without predefined labels.  
+- ✅ Used when we don’t know the categories in advance.  
+- ✅ Example: Customer segmentation in marketing, anomaly detection in banking.  
+
+---
+
+### 📊 Popular Clustering Algorithms & Explanation  
+
+#### 1. **K-Means Clustering**  
+- Divides the dataset into **K clusters** where each point belongs to the cluster with the nearest centroid (mean).  
+- Iterative process:  
+  1. Choose number of clusters (K).  
+  2. Assign data points to the nearest centroid.  
+  3. Update centroids based on assigned points.  
+- ✅ Example: Market segmentation, grouping similar news articles.  
+- ⚠️ Limitation: Requires specifying `K` beforehand, struggles with non-spherical clusters.  
+
+---
+
+#### 2. **Hierarchical Clustering**  
+- Builds a **hierarchy (tree-like structure)** of clusters.  
+- Two approaches:  
+  - **Agglomerative (Bottom-Up):** Start with each point as its own cluster and merge step by step.  
+  - **Divisive (Top-Down):** Start with one big cluster and split recursively.  
+- Produces a **dendrogram** to visualize cluster merging.  
+- ✅ Example: Document clustering, gene sequence analysis.  
+- ⚠️ Limitation: Computationally expensive for very large datasets.  
+
+---
+
+#### 3. **DBSCAN (Density-Based Spatial Clustering of Applications with Noise)**  
+- Groups together points that are closely packed (dense regions).  
+- Points in low-density regions are considered **noise (outliers)**.  
+- Advantages:  
+  - Doesn’t require number of clusters (unlike K-Means).  
+  - Works with arbitrary shapes of clusters.  
+- ✅ Example: Fraud detection, geographical data clustering (earthquake hotspots).  
+- ⚠️ Limitation: Struggles with datasets of varying density.  
+
+---
+
+### 🔑 Summary of Clustering Algorithms  
+
+| Algorithm | Type | Best For | Key Feature |
+|-----------|------|----------|-------------|
+| K-Means | Centroid-based | Large datasets, well-separated clusters | Fast, simple |
+| Hierarchical | Tree-based | Small to medium datasets | Dendrogram visualization |
+| DBSCAN | Density-based | Arbitrary shaped clusters, noise handling | Detects outliers |
+
+---
+
+✅ *Clustering is the backbone of unsupervised learning, widely used for exploratory data analysis, anomaly detection, and customer segmentation.*
+
+
 
 ### 🔹 🔻 Dimensionality Reduction  
 **Definition:** Dimensionality Reduction is the process of **reducing the number of features** in a dataset while preserving important information.  
