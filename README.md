@@ -119,29 +119,6 @@ Classification is the task of predicting a **category or class label** from inpu
 
 ---
 
-✅ *These classification algorithms are the backbone of supervised machine learning and widely asked in interviews.*
-
-
-## 🧩 3. Unsupervised Learning
-
-### 🔹 🔗 Clustering  
-**Definition:** Clustering is the process of **grouping similar data points** into clusters without predefined labels.  
-- ✅ Example: Customer segmentation in marketing.  
-- 📊 Types of Clustering:
-  - **K-Means** – partitions data into *k* clusters.  
-  - **Hierarchical Clustering** – builds a tree of clusters.  
-  - **DBSCAN** – density-based clustering that detects arbitrary shaped clusters.  
-
-### 🔹 🔻 Dimensionality Reduction  
-**Definition:** Dimensionality Reduction is the process of **reducing the number of features** in a dataset while preserving important information.  
-- ✅ Example: Reducing image pixels/features for faster training.  
-- 📊 Types of Dimensionality Reduction:
-  - **Principal Component Analysis (PCA)** – transforms features into principal components.  
-  - **t-SNE** – useful for visualization in 2D/3D.  
-  - **Autoencoders** – neural network-based feature compression.  
-
----
-
 ## 🔹 📈 Regression Models  
 
 **Definition:**  
@@ -211,8 +188,28 @@ Regression is the task of predicting a **continuous numeric value** from input d
 
 ---
 
-✅ *These regression algorithms are widely used in Data Science, ML projects, and interviews.*
+✅ *These classification algorithms are the backbone of supervised machine learning and widely asked in interviews.*
 
+
+## 🧩 3. Unsupervised Learning
+
+### 🔹 🔗 Clustering  
+**Definition:** Clustering is the process of **grouping similar data points** into clusters without predefined labels.  
+- ✅ Example: Customer segmentation in marketing.  
+- 📊 Types of Clustering:
+  - **K-Means** – partitions data into *k* clusters.  
+  - **Hierarchical Clustering** – builds a tree of clusters.  
+  - **DBSCAN** – density-based clustering that detects arbitrary shaped clusters.  
+
+### 🔹 🔻 Dimensionality Reduction  
+**Definition:** Dimensionality Reduction is the process of **reducing the number of features** in a dataset while preserving important information.  
+- ✅ Example: Reducing image pixels/features for faster training.  
+- 📊 Types of Dimensionality Reduction:
+  - **Principal Component Analysis (PCA)** – transforms features into principal components.  
+  - **t-SNE** – useful for visualization in 2D/3D.  
+  - **Autoencoders** – neural network-based feature compression.  
+
+✅ *These regression algorithms are widely used in Data Science, ML projects, and interviews.*
 
 ## 🤖 4. Deep Learning
 
