@@ -1,8 +1,6 @@
 # 🤖 Machine Learning & 🚀 Machine Learning Evaluation Metrics & Techniques
  
 
----
-
 ## 📌 1. Machine Learning Types
 
 Machine Learning is broadly divided into:
