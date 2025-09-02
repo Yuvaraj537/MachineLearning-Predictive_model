@@ -233,6 +233,86 @@ Clustering is the process of **grouping similar data points** into clusters with
 - ⚠️ Limitation: Computationally expensive for very large datasets.  
 
 ---
+# 🌳 Hierarchical Clustering in Machine Learning  
+
+## 📌 Definition  
+Hierarchical Clustering is an **unsupervised learning algorithm** that builds a **hierarchy (tree-like structure)** of clusters.  
+- Groups similar data points step by step.  
+- Produces a **dendrogram** to visualize cluster relationships.  
+
+✅ Commonly used in **document clustering, gene sequence analysis, and image segmentation**.  
+
+---
+
+## 🔹 Types of Hierarchical Clustering  
+
+### 1️⃣ Agglomerative Clustering (Bottom-Up) ⬆️  
+
+- Start with **each data point as its own cluster**.  
+- Iteratively **merge the closest clusters** based on a distance metric (Euclidean, Manhattan, Cosine).  
+- Continue until all points are merged into a **single big cluster**.  
+
+🔧 **Steps:**  
+1. Treat each point as a single cluster.  
+2. Compute distance between all clusters.  
+3. Merge the two closest clusters.  
+4. Repeat until one cluster remains.  
+
+✅ Example: Grouping **customers with similar purchase history**.  
+
+⚠️ Limitation: Can be **slow** for large datasets.  
+
+---
+
+### 2️⃣ Divisive Clustering (Top-Down) ⬇️  
+
+- Start with **one big cluster** containing all data.  
+- Recursively **split clusters into smaller ones**.  
+- Continue until each data point is its own cluster.  
+
+🔧 **Steps:**  
+1. Place all points in one cluster.  
+2. Find the cluster to split (using dissimilarity).  
+3. Divide into sub-clusters.  
+4. Repeat until each point is separate.  
+
+✅ Example: **Gene sequence analysis** in bioinformatics.  
+
+⚠️ Limitation: **More computationally expensive** than agglomerative.
+
+
+---
+
+## 📌 Dendrogram 🌳  
+
+- A **tree diagram** that shows how clusters merge or split.  
+- X-axis → Data points.  
+- Y-axis → Distance or similarity between clusters.  
+
+✅ Helps decide **optimal number of clusters** (cutting the dendrogram at a chosen height).  
+
+---
+
+## 📊 Comparison Table  
+
+| Approach        | Direction | Process | Use Case | Limitation |
+|-----------------|-----------|---------|----------|------------|
+| Agglomerative ⬆️ | Bottom-Up | Merge clusters step by step | Customer segmentation | Slow on very large data |
+| Divisive ⬇️     | Top-Down  | Split big cluster recursively | Gene analysis | Computationally heavy |
+
+---
+
+## 🚀 Key Takeaways  
+
+- 🌳 Hierarchical clustering creates a **tree of clusters**.  
+- ⬆️ Agglomerative → Build up from individuals → one cluster.  
+- ⬇️ Divisive → Break down from one cluster → individuals.  
+- 📊 Use **dendrogram** to interpret results.  
+- ⚠️ Not ideal for **very large datasets**.  
+
+---
+
+
 
 #### 3. **DBSCAN (Density-Based Spatial Clustering of Applications with Noise)**  
 - Groups together points that are closely packed (dense regions).  
@@ -268,6 +348,96 @@ Clustering is the process of **grouping similar data points** into clusters with
   - **Autoencoders** – neural network-based feature compression.  
 
 ✅ *These regression algorithms are widely used in Data Science, ML projects, and interviews.*
+
+# 🔻 Dimensionality Reduction in Machine Learning  
+
+### 📌 Definition  
+Dimensionality Reduction is the process of **reducing the number of features** in a dataset while **preserving important information**.  
+
+- ✅ Reduces complexity & training time  
+- ✅ Removes redundant/noisy features  
+- ✅ Helps visualization in **2D/3D**  
+
+📖 **Example:** Reducing image pixels/features for faster training.  
+
+---
+
+## 🔹 Types of Dimensionality Reduction  
+
+### 1️⃣ Feature Selection 📝  
+> Selects the most important **original features** (without transforming them).  
+
+- 🔧 **Filter Methods** → Correlation, Chi-Square, ANOVA  
+- 🔧 **Wrapper Methods** → Forward/Backward Selection, RFE  
+- 🔧 **Embedded Methods** → Lasso (L1), Decision Trees  
+
+✔️ Keeps interpretability of features  
+✔️ Useful when features are highly correlated  
+
+---
+
+### 2️⃣ Feature Extraction 🔄  
+> Creates **new features** by combining or transforming original ones.  
+
+#### 🔸 Principal Component Analysis (PCA) 📉  
+- Linear transformation → principal components  
+- Captures **maximum variance**  
+- ✅ Used in images, text, finance  
+
+#### 🔸 Linear Discriminant Analysis (LDA) 📊  
+- Supervised method → maximizes class separability  
+- ✅ Great for **classification problems**  
+
+#### 🔸 t-SNE(t-distributed Stochastic Neighbor Embedding) 🌐 
+- Non-linear → best for **2D/3D visualization**  
+- Preserves local similarities of data  
+
+#### 🔸 UMAP(Uniform Manifold Approximation and Projection) ⚡  
+- Faster & scalable alternative to t-SNE  
+- Preserves both **local & global structure**  
+
+#### 🔸 Autoencoders 🤖  
+- Neural networks → compress & reconstruct data  
+- Learn **non-linear representations**  
+- ✅ Used in image compression & anomaly detection  
+
+---
+
+### 3️⃣ Matrix Factorization 🧮  
+> Decomposes data matrices into smaller factors.  
+
+- **SVD (Singular Value Decomposition)** → recommender systems, image compression  
+- **NMF (Non-Negative Matrix Factorization)** → text mining, topic modeling  
+
+---
+
+## 📊 Comparison Table  
+
+| Technique | Type | Linear / Non-linear | Use Case |
+|-----------|------|----------------------|----------|
+| PCA | Feature Extraction | Linear | Image compression, finance |
+| LDA | Feature Extraction | Linear | Classification |
+| t-SNE | Feature Extraction | Non-linear | Visualization |
+| UMAP | Feature Extraction | Non-linear | Large-scale visualization |
+| Autoencoders | Feature Extraction | Non-linear | Deep learning, anomaly detection |
+| SVD/NMF | Matrix Factorization | Linear | Recommender systems, NLP |
+| Feature Selection | Selection | N/A | Reducing irrelevant features |
+
+---
+
+## 🚀 Benefits of Dimensionality Reduction  
+
+- ⚡ **Faster training** & inference  
+- 🎯 **Removes noise & redundancy**  
+- 👀 **Better visualization**  
+- 📈 **Improves generalization** (reduces overfitting)  
+
+---
+
+## 📌 Quick Visual Hierarchy  
+
+
+
 
 ## 🤖 4. Deep Learning
 
