@@ -373,59 +373,7 @@ Dimensionality Reduction is the process of **reducing the number of features** i
 
 ---
 
-## 📌 Quick Visual Hierarchy  
 
-
-
-
-## 🤖 4. Deep Learning
-
-Deep Learning is a subset of ML using **neural networks**.  
-
-### 🔹 🧠 Artificial Neural Network (ANN)  
-- Basic form of deep learning model.  
-- Layers: **Input → Hidden → Output**.  
-- ✅ Used for: General classification/prediction tasks.  
-
-### 🔹 🖼️ Convolutional Neural Network (CNN)  
-- Specialized for **image & spatial data**.  
-- Uses **convolutional filters** to detect patterns.  
-- ✅ Applications: Image recognition, object detection.  
-
-### 🔹 ⏳ Recurrent Neural Network (RNN) & LSTM  
-- Specialized for **sequence data**.  
-- **RNN:** Handles short-term memory but struggles with long dependencies.  
-- **LSTM (Long Short-Term Memory):** Solves long-term dependency issues.  
-- ✅ Applications: Time-series forecasting, speech recognition, text prediction.  
-
----
-
-## 📝 5. Natural Language Processing (NLP)
-
-NLP bridges **computers and human language**.  
-
-### 🔹 ⚙️ Text Processing Steps
-1. ✂️ Tokenization – splitting text into words/sentences.  
-2. 🗑️ Stopword Removal – removing common words (is, the, a).  
-3. 🔄 Stemming/Lemmatization – reducing words to root form.  
-4. 🔢 Vectorization – converting text into numbers (Bag-of-Words, TF-IDF, Word2Vec, BERT).  
-
-### 🔹 📂 NLP Tasks
-- 😀 Sentiment Analysis  
-- 📨 Text Classification (spam detection)  
-- 🏷️ Named Entity Recognition (NER)  
-- 🌍 Machine Translation  
-- ✍️ Text Summarization  
-- 🤖 Chatbots & Question Answering  
-
-### 🔹 🔣 Common Symbols in NLP
-- `w` → word  
-- `t` → token  
-- `d` → document  
-- `V` → vocabulary  
-- `|D|` → total number of documents  
-
----
 
 ## ✅ Summary
 
