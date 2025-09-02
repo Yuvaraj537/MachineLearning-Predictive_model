@@ -1,5 +1,4 @@
-# 🤖 Machine Learning & 🚀 Machine Learning Evaluation Metrics & Techniques
- 
+# 🤖 Machine Learning & 📊 Time Series Forecasting
 
 ## 📌 1. Machine Learning Types
 
@@ -419,8 +418,6 @@ Summarizes model performance with key metrics for each class:
 
 ---
 
----
-
 ## 🔹 3. Resampling Techniques ⚖️
 
 When data is **imbalanced** (e.g., Fraud Detection → 99% Non-Fraud, 1% Fraud), accuracy alone is misleading.  
@@ -533,3 +530,71 @@ RMSE = \sqrt{ \frac{1}{n} \sum (y_{true} - y_{pred})^2 }
 - 📉 MSE/RMSE → Regression error metrics  
 - 📈 ROC-AUC → Best for classification evaluation
 
+# 📊 Time Series Analysis & Forecasting with Prophet
+
+---
+
+## 🔹 1. Time Series Analysis ⏱️
+
+**Time Series Analysis** is the study of **data points collected or recorded at specific time intervals**.  
+It is used to **forecast future values**, detect trends, seasonality, and patterns over time.
+
+### 📌 Key Components of a Time Series
+
+1. **Trend 📈**  
+   - Long-term increase or decrease in data.  
+   - Example: Stock price increasing over years.
+
+2. **Seasonality 🌙**  
+   - Repeating patterns over fixed periods.  
+   - Example: Ice cream sales increasing every summer.
+
+3. **Cyclic Patterns 🔄**  
+   - Fluctuations that occur over irregular intervals.  
+   - Example: Economic cycles, business cycles.
+
+4. **Noise 🌫️**  
+   - Random variation or irregularities in the data.  
+   - Example: Sudden spikes due to unexpected events.
+
+---
+
+### 🔹 2. Forecasting Goals 🎯
+
+- **Prediction** → Estimate future values  
+- **Trend detection** → Identify long-term movement  
+- **Seasonal patterns** → Detect repeating cycles  
+- **Anomaly detection** → Spot unusual observations
+
+---
+
+## 🔹 3. Prophet Model 📦
+
+**Prophet** is a **Facebook-developed time series forecasting library**.  
+
+### 📌 Features
+
+- Handles **trend, seasonality, and holidays** automatically  
+- Works well with **missing data and outliers**  
+- Requires **minimal parameter tuning**  
+- Generates **uncertainty intervals** for predictions
+
+---
+
+### 🔹 3.1 How Prophet Works ⚙️
+
+1. **Trend Modeling**  
+   - Linear or logistic growth trend.  
+
+2. **Seasonality Modeling**  
+   - Weekly, yearly, or custom seasonality.  
+
+3. **Holiday Effects** 🎉  
+   - Allows adding special events that impact time series.  
+
+4. **Additive Model**  
+\[
+y(t) = Trend(t) + Seasonality(t) + Holidays(t) + Noise(t)
+\]
+
+---
