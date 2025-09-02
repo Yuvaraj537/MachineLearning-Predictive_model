@@ -1,7 +1,4 @@
-# 🤖 Machine Learning & Deep Learning Overview
-
-Welcome to this repository!  
-This document provides an overview of **Machine Learning (ML)**, **Deep Learning (DL)**, and **Natural Language Processing (NLP)** concepts.
+# 🤖 Machine Learning & Deep Learning 
 
 ---
 
@@ -103,19 +100,6 @@ Classification is the task of predicting a **category or class label** from inpu
 - **CatBoost** → Handles categorical features well.  
 - ✅ Example: Customer churn prediction, loan default prediction.  
 
----
-
-### 🔑 Summary of Classification Models  
-
-| Algorithm | Type | Best For | Key Feature |
-|-----------|------|----------|-------------|
-| Logistic Regression | Linear | Binary classification | Probability-based |
-| Decision Tree | Non-parametric | Small-medium datasets | Easy to interpret |
-| Random Forest | Ensemble | Large datasets | Reduces overfitting |
-| SVM | Margin-based | High-dimensional data | Works with kernels |
-| KNN | Distance-based | Small datasets | Simple but slow for large data |
-| Naïve Bayes | Probabilistic | Text classification | Fast & works well with sparse data |
-| Gradient Boosting (XGBoost/LightGBM) | Ensemble (Boosting) | Large & complex datasets | High accuracy, scalable |
 
 ---
 
@@ -171,20 +155,6 @@ Regression is the task of predicting a **continuous numeric value** from input d
 - Uses decision trees + gradient descent optimization.  
 - ✅ Example: Predicting energy consumption, medical risk scores.  
 
----
-
-### 🔑 Summary of Regression Models  
-
-| Algorithm | Type | Best For | Key Feature |
-|-----------|------|----------|-------------|
-| Linear Regression | Simple/Linear | Straight-line relationships | Fast & easy |
-| Polynomial Regression | Non-linear | Curved trends | Fits complex data |
-| Decision Tree Regressor | Non-parametric | Data with conditions | Easy to interpret |
-| Random Forest Regressor | Ensemble | Large datasets | Reduces overfitting |
-| Support Vector Regressor | Margin-based | Complex but small data | Robust to noise |
-| Ridge Regression | Regularized | Multicollinearity | Shrinks coefficients |
-| Lasso Regression | Regularized | Feature selection | Eliminates irrelevant features |
-| Gradient Boosting Regressor | Ensemble (Boosting) | High accuracy | Sequential learning |
 
 ---
 
@@ -291,14 +261,6 @@ Hierarchical Clustering is an **unsupervised learning algorithm** that builds a 
 
 ✅ Helps decide **optimal number of clusters** (cutting the dendrogram at a chosen height).  
 
----
-
-## 📊 Comparison Table  
-
-| Approach        | Direction | Process | Use Case | Limitation |
-|-----------------|-----------|---------|----------|------------|
-| Agglomerative ⬆️ | Bottom-Up | Merge clusters step by step | Customer segmentation | Slow on very large data |
-| Divisive ⬇️     | Top-Down  | Split big cluster recursively | Gene analysis | Computationally heavy |
 
 ---
 
@@ -322,16 +284,6 @@ Hierarchical Clustering is an **unsupervised learning algorithm** that builds a 
   - Works with arbitrary shapes of clusters.  
 - ✅ Example: Fraud detection, geographical data clustering (earthquake hotspots).  
 - ⚠️ Limitation: Struggles with datasets of varying density.  
-
----
-
-### 🔑 Summary of Clustering Algorithms  
-
-| Algorithm | Type | Best For | Key Feature |
-|-----------|------|----------|-------------|
-| K-Means | Centroid-based | Large datasets, well-separated clusters | Fast, simple |
-| Hierarchical | Tree-based | Small to medium datasets | Dendrogram visualization |
-| DBSCAN | Density-based | Arbitrary shaped clusters, noise handling | Detects outliers |
 
 ---
 
@@ -409,19 +361,6 @@ Dimensionality Reduction is the process of **reducing the number of features** i
 - **SVD (Singular Value Decomposition)** → recommender systems, image compression  
 - **NMF (Non-Negative Matrix Factorization)** → text mining, topic modeling  
 
----
-
-## 📊 Comparison Table  
-
-| Technique | Type | Linear / Non-linear | Use Case |
-|-----------|------|----------------------|----------|
-| PCA | Feature Extraction | Linear | Image compression, finance |
-| LDA | Feature Extraction | Linear | Classification |
-| t-SNE | Feature Extraction | Non-linear | Visualization |
-| UMAP | Feature Extraction | Non-linear | Large-scale visualization |
-| Autoencoders | Feature Extraction | Non-linear | Deep learning, anomaly detection |
-| SVD/NMF | Matrix Factorization | Linear | Recommender systems, NLP |
-| Feature Selection | Selection | N/A | Reducing irrelevant features |
 
 ---
 
