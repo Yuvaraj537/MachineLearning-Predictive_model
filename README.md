@@ -383,12 +383,7 @@ Dimensionality Reduction is the process of **reducing the number of features** i
 - **NLP** → Text processing ⚙️ & applications 📂.  
 
 ---
-
-📌 *This README is designed for learners, interview prep, and quick revision.*
-
-
 # 🚀 Machine Learning Evaluation Metrics & Techniques
-
 ---
 
 ## 🔹 1. Confusion Matrix 🎯
